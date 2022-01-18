@@ -6,11 +6,12 @@ namespace RentACar
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.Title = "Rental Management";
             Admin superuser = new Admin();
             superuser.name = "schäppi";
             superuser.password = "passwort1";
             superuser.IsLoggedIn = false;
+            UI.menu();
         }
     }
 }

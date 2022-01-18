@@ -14,10 +14,12 @@ namespace RentACar
         public Boolean available;
         public int numTires;
         public double basePrice;
-        public abstract int maxSpeed; 
+        // public abstract int maxSpeed; 
 
 
-        public void rent() { 
+        public void rent() 
+        {
+         
         }
     }
 
