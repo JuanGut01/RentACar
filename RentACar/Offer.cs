@@ -13,6 +13,17 @@ namespace RentACar
         public double price;
         public DateTime startDate;
         public DateTime endDate;
-        //vehicle.name 
+        public string vehicle Vehicle.name 
+
+        public void accept(int Offer.id)
+        {
+
+        }
+
+        public void decline(int Offer.id)
+        {
+
+        }
+
     }
 }
