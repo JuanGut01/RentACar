@@ -9,6 +9,9 @@ namespace RentACar
     class Admin
     {
         public string name;
+        public string password;
         public Boolean IsLoggedIn;
     }
+
+    
 }
