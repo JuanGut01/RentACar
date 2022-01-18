@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace RentACar
 {
-    class Vehicle
+    public class Vehicle
     {
-        public int id;
+        public int vehicleId;
         public string brand;
         public string model;
         public Boolean available;
@@ -19,5 +19,24 @@ namespace RentACar
 
         public void rent() { 
         }
+    }
+
+
+    public class Car : Vehicle
+    {
+        public Boolean winterTires;
+        public int numSeats;
+        public Boolean automatic;
+    }
+
+    public class Bike : Vehicle
+    {
+        public int numGears;
+        public Boolean eBike;
+    }
+
+    public class Motorbike : Vehicle
+    {
+        public Boolean winterTires;
     }
 }
