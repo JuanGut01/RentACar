@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Colorful;
-using console = Colorful.Console;
-using Console = System.Console;
 using System.Threading;
 
 namespace RentACar
@@ -31,7 +28,7 @@ namespace RentACar
      |  _ <  __/ | | | |_  | |\  | |_| |\ V  V / |_|
      |_| \_\___|_| |_|\__| |_| \_|\___/  \_/\_/  (_)
                                                     ";
-                    console.WriteLine(rentnowlogo, ConsoleColor.DarkMagenta);
+                    Console.WriteLine(rentnowlogo, ConsoleColor.DarkMagenta);
                     // List all vehicles
                     // select vehicle regarding input (plate id)
                 }
@@ -43,7 +40,7 @@ namespace RentACar
      | |__| (_) | (_| | | | | | | (_| \__ \ | |___| | | | | | |_) | | (_) | |_| |  __/  __/
      |_____\___/ \__, |_|_| |_|  \__,_|___/ |_____|_| |_| |_| .__/|_|\___/ \__, |\___|\___|
                  |___/                                      |_|            |___/           ";
-                    console.WriteLine(loginasemployeelogo, ConsoleColor.DarkMagenta);
+                    Console.WriteLine(loginasemployeelogo, ConsoleColor.DarkMagenta);
                     // Sign in Form for Admin
                     // Check credentials, if true forward Admin Area.
                 }
@@ -55,7 +52,7 @@ namespace RentACar
      | |___ >  <| | |_ 
      |_____/_/\_\_|\__|
                        ";
-                    console.WriteLine(exitlogo, ConsoleColor.DarkMagenta);
+                    Console.WriteLine(exitlogo, ConsoleColor.DarkMagenta);
                 }
                 else
                 {
