@@ -26,7 +26,7 @@ namespace RentACar
             vehicle.numTires = numTires;
             vehicle.basePrice = basePrice;
             vehicle.maxSpeed = maxSpeed;
-            vehicle.Add(vehicle);
+            //vehicle.Add(vehicle);
 
         }
         public void deleteVehicle(int vehicleId)
@@ -36,10 +36,11 @@ namespace RentACar
                 if(v.vehicleId == vehicleId)
                 {
                     bool result = vehicleArray.Remove(v);
-                    return result;
                 }
-                return false; 
+                 
             } 
+
+
         }
         public void returnVehicle( int vehicleId)
         {

@@ -11,16 +11,17 @@ namespace RentACar
     {
         public static void menu()
         {
-            for (; ; )
+            bool isDone = false;
+            while (isDone == false )
             {
                 Console.Clear();
                 writeLogo();
                 say("1", "Rent a Vehicle NOW!");
                 say("2", "Login as Employee");
                 say("3", "Exit");
-                Console.ReadKey();
-                string option = Console.ReadLine();
-                if (option == "1")
+                //Console.ReadKey();
+                int option = Convert.ToInt32(Console.ReadLine());
+                if (option == 1)
                 {
                     string rentnowlogo = @"  ____            _     _   _  _____        ___ 
      |  _ \ ___ _ __ | |_  | \ | |/ _ \ \      / / |
@@ -32,7 +33,7 @@ namespace RentACar
                     // List all vehicles
                     // select vehicle regarding input (plate id)
                 }
-                else if (option == "2")
+                else if (option == 2)
                 {
                     string loginasemployeelogo = @"  _                _                     _____                 _                       
      | |    ___   __ _(_)_ __     __ _ ___  | ____|_ __ ___  _ __ | | ___  _   _  ___  ___ 
@@ -44,7 +45,7 @@ namespace RentACar
                     // Sign in Form for Admin
                     // Check credentials, if true forward Admin Area.
                 }
-                else if (option == "3")
+                else if (option == 3)
                 {
                     string exitlogo = @"  _____      _ _   
      | ____|_  _(_) |_ 
@@ -53,6 +54,7 @@ namespace RentACar
      |_____/_/\_\_|\__|
                        ";
                     Console.WriteLine(exitlogo, ConsoleColor.DarkMagenta);
+                    isDone = true;
                 }
                 else
                 {
