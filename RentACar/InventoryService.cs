@@ -18,7 +18,7 @@ namespace RentACar
 
         public void addVehicle(string brand, string model, Boolean available, int numTires, double basePrice, int maxSpeed) 
         {
-            string vehicle = new Vehicle();
+            Vehicle vehicle = new Vehicle();
             vehicle.vehicleId = genId();
             vehicle.brand = brand;
             vehicle.model = model;
@@ -26,7 +26,7 @@ namespace RentACar
             vehicle.numTires = numTires;
             vehicle.basePrice = basePrice;
             vehicle.maxSpeed = maxSpeed;
-            vehicles.Add(vehicle);
+            vehicle.Add(vehicle);
 
         }
         public void deleteVehicle(int vehicleId)

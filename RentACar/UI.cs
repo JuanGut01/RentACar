@@ -57,7 +57,7 @@ namespace RentACar
                 else
                 {
                     string invalidoption = "Please choose a valid option.";
-                    console.WriteLine(invalidoption, ConsoleColor.Red);
+                    Console.WriteLine(invalidoption, ConsoleColor.Red);
                     Thread.Sleep(2000);
                 }
             }
